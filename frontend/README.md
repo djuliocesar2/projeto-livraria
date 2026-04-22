@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# 📚 Sistema de Gestão - Rede de Livrarias LIVRO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido como parte da **Atividade Prática Integradora** do curso de Ciência da Computação da **UNIP**, sob a orientação do professor **André de Lira Muniz (@agdelira)**.
 
-## Available Scripts
+A solução foca no **Cenário 4**, modernizando a gestão da rede de livrarias LIVRO através de uma arquitetura modular que integra lojas físicas e e-commerce em tempo real.
 
-In the project directory, you can run:
+## 🚀 Principais Funcionalidades
 
-### `npm start`
+- **Sincronização de Estoque Real-Time:** Atualização imediata entre vendas no balcão e disponibilidade no site.
+- **Modo Offline Resiliente:** Capacidade de processar vendas mesmo sem conexão com a internet, utilizando persistência local para sincronização posterior.
+- **Busca Avançada Instantânea:** Mecanismo de pesquisa otimizado por ISBN, Autor ou Gênero.
+- **Reposição Automática:** Lógica de negócio que gera ordens de compra automáticas ao atingir o estoque crítico (5 unidades).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Front-end:** React (Hooks, Axios, LocalStorage)
+- **Back-end:** Node.js com Express
+- **Banco de Dados:** SQLite (Relacional)
+- **Arquitetura:** REST API (Decoupled Architecture)
 
-### `npm test`
+## 📋 Requisitos do Projeto (Engenharia de Software)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Requisitos Funcionais (RF)
+- **RF-01:** Sincronizar estoque entre PDV e E-commerce.
+- **RF-02:** Pesquisa rápida por metadados de livros.
+- **RF-05:** Operação ininterrupta em modo offline.
 
-### `npm run build`
+### Requisitos Não Funcionais (RNF)
+- **RNF-01:** Baixa latência nas consultas.
+- **RNF-03:** Conformidade com a LGPD para dados de usuários.
+- **RNF-06:** Arquitetura modular via APIs abertas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Como Executar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Backend:**
+   - Acesse a pasta `backend`: `cd backend`
+   - Instale as dependências: `npm install`
+   - Inicie o servidor: `node server.js`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Frontend:**
+   - Acesse a pasta `frontend`: `cd frontend`
+   - Instale as dependências: `npm install`
+   - Inicie a aplicação: `npm start`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+**Desenvolvido por:** Julio Cesar Nascimento  
+**Professor Orientador:** André de Lira Muniz
