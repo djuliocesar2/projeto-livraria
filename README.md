@@ -9,7 +9,19 @@ A solução foca no **Cenário 4**, modernizando a gestão da rede de livrarias 
 - **Sincronização de Estoque Real-Time:** Atualização imediata entre vendas no balcão e disponibilidade no site.
 - **Modo Offline Resiliente:** Capacidade de processar vendas mesmo sem conexão com a internet, utilizando persistência local para sincronização posterior.
 - **Busca Avançada Instantânea:** Mecanismo de pesquisa otimizado por ISBN, Autor ou Gênero.
-- **Reposição Automática:** Lógica de negócio que gera ordens de compra automáticas ao atingir o estoque crítico (5 unidades).
+- **Reposição Automática (RN-02):** Lógica de negócio que gera ordens de compra automáticas ao atingir o estoque crítico definido para cada título.
+
+## 📚 Catálogo de Testes (Dados Iniciais)
+
+O sistema inicia com os seguintes livros pré-cadastrados para validação:
+
+| ISBN | Título | Autor | Gênero | Preço | Estoque Crítico |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **97801** | O Programador Pragmático | Andrew Hunt | Tecnologia | R$ 95,00 | 5 unidades |
+| **97802** | Engenharia de Software | Ian Sommerville | Educação | R$ 180,00 | 3 unidades |
+| **97803** | Código Limpo | Robert C. Martin | Tecnologia | R$ 85,00 | 5 unidades |
+| **97804** | Dom Casmurro | Machado de Assis | Literatura | R$ 45,00 | 2 unidades |
+| **97805** | Algoritmos: Teoria e Prática | Thomas Cormen | Tecnologia | R$ 220,00 | 4 unidades |
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -18,7 +30,7 @@ A solução foca no **Cenário 4**, modernizando a gestão da rede de livrarias 
 - **Banco de Dados:** SQLite (Relacional)
 - **Arquitetura:** REST API (Decoupled Architecture)
 
-## 📋 Requisitos do Projeto (Engenharia de Software)
+## 📋 Engenharia de Requisitos
 
 ### Requisitos Funcionais (RF)
 - **RF-01:** Sincronizar estoque entre PDV e E-commerce.
@@ -26,8 +38,8 @@ A solução foca no **Cenário 4**, modernizando a gestão da rede de livrarias 
 - **RF-05:** Operação ininterrupta em modo offline.
 
 ### Requisitos Não Funcionais (RNF)
-- **RNF-01:** Baixa latência nas consultas.
-- **RNF-03:** Conformidade com a LGPD para dados de usuários.
+- **RNF-01:** Baixa latência nas consultas (resposta instantânea).
+- **RNF-03:** Conformidade com a LGPD para segurança de dados.
 - **RNF-06:** Arquitetura modular via APIs abertas.
 
 ## ⚙️ Como Executar o Projeto
@@ -43,5 +55,6 @@ A solução foca no **Cenário 4**, modernizando a gestão da rede de livrarias 
    - Inicie a aplicação: `npm start`
 
 ---
-**Desenvolvido por:** Julio Cesar Nascimento  
+**Desenvolvido por:** Julio Cesar Nascimento (RA: R02067-3)  
+**Instituição:** UNIP - Ciência da Computação  
 **Professor Orientador:** André de Lira Muniz
